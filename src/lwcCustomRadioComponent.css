@@ -1,40 +1,48 @@
-.slds-card__body {
-    padding: 0 1rem 0 1rem;
+.slds-form-element__control {
+	border: 1px solid rgb(201, 201, 201);
+	border-collapse: separate;
+  border-spacing: 0;
+	border-radius:0.25rem;
+	padding:5px;
+	padding:0;
 }
 
-.slds-form-element__legend, .slds-form-element__label.slds-no-flex {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #706e6b;
-}
-.slds-radio label, .slds-checkbox label {
-    font-size: .7125rem;
-}
-
-.material .slds-radio_faux, .material .slds-checkbox_faux {
-	display: none !important;
+.slds-radio [type=radio]:checked+.slds-radio--faux:after, 
+.slds-radio [type=radio]:checked+.slds-radio__label .slds-radio--faux:after, 
+.slds-radio [type=radio]:checked+.slds-radio__label .slds-radio_faux:after, 
+.slds-radio [type=radio]:checked+.slds-radio_faux:after, 
+.slds-radio [type=radio]:checked~.slds-radio--faux:after, 
+.slds-radio [type=radio]:checked~.slds-radio_faux:after {
+background-color: rgba(49, 201, 157, 1);
 }
 
-.material .slds-radio, .material .slds-checkbox  {
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+.slds-radio label, 
+.slds-checkbox label {
+  font-size: .7125rem;
+}
+
+.material .slds-radio_faux, 
+.material .slds-checkbox_faux {
+	
 }
 
 .material .slds-radio, .material .slds-checkbox {
-	background-color: #fff;
 	display: block;
 	position: relative;
-	border: 1px solid #dddbda;
-	border-collapse: separate;
-    border-spacing: 0;
+	border-bottom: 1px solid rgba(201, 201, 201,0.25);
+}
+
+.material .slds-radio:hover, .material .slds-checkbox:hover {
+	background: rgba(201, 201, 201,0.15);
 }
 
 .material label {
-	padding: 8px 14px;
+	line-height:30px;
+	padding-left:10px;
 	width: 100%;
 	display: block;
 	text-align: left;
-	color: #3C454C;
+	color: #5ae270;
 	cursor: pointer;
 	position: relative;
 	z-index: 2;
@@ -47,9 +55,9 @@
 	height: 10px;
 	border-radius: 50%;
 	content: '';
-	background-color: rgba(45, 74, 180, 1.0);
+	background-color: rgba(49, 201, 157, 1);
 	position: absolute;
-	left: 50%;
+	right: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%) scale3d(1, 1, 1);
 	transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -58,6 +66,7 @@
 }
 
 .material label:after {
+	display:none;
 	width: 22px;
 	height: 22px;
 	content: '';
@@ -69,9 +78,8 @@
 	border-radius: 50%;
 	z-index: 2;
 	position: absolute;
-	right: 12px;
-	top: 50%;
-	transform: translateY(-50%);
+	left: 5px;
+	top:5px;
 	cursor: pointer;
 	transition: all 200ms ease-in;
 }
@@ -82,7 +90,7 @@
 }
 
 .material input:checked ~ label:before {
-	transform: translate(-50%, -50%) scale3d(60, 56, 1);
+	transform: translate(-50%, -50%) scale3d(120, 56, 1);
 	opacity: 1;
 }
 
@@ -110,7 +118,7 @@
 }
 .multiselect-list li.slds-is-selected a {
     color: white;
-    background-color: rgba(45, 74, 180, 1.0);
+    background-color: rgba(49, 201, 157, 1);
     transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
     transform: translate(0%, 0%) scale3d(1, 1, 1);
 }

@@ -4,19 +4,7 @@
                 <div class="slds-grid slds-gutters_x-small slds-wrap slds-m-top_small">
                         <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 slds-medium-size_6-of-12">
 
-                                <div class="slds-form-element slds-m-bottom_large">
-                                        <label class="slds-form-element__label " for="currentQuebecCityNeighborhood" >Label Title</label>
-                                        <div class="slds-form-element__control">
-                                                <input name ="currentQuebecCityNeighborhood"
-                                                        data-id="currentQuebecCityNeighborhood"
-                                                        type="text"
-                                                        id="currentQuebecCityNeighborhood"
-                                                        placeholder="Enter City"
-                                                        class="slds-input material-input"
-                                                        value={sObjectRecord.Current_City_Neighborhood__c}
-                                                />
-                                        </div>
-                                </div>
+
                                 <div class="slds-m-bottom_large material">
 
                                         <c-lwc-custom-radio-component options={priceRangePicklist} name="priceRange"
@@ -32,24 +20,10 @@
                                                         onclick={expand}
                                                         style="width:100%;border-radius:0px;"
                                                         name="expandPriceRange">
-                                                        Expand
+                                                        Show Options + 
                                                 </button>
                                 </div>
-                                <div class="slds-m-bottom_large material">
-                                        <c-lwc-custom-radio-component options={genderPicklist} name="gender"
-                                                label={label.DD_Gender} value={sObjectRecord.Gender__c}
-                                                uniqueid="genderRadio" id="gender" onvaluechange={handleDataChange}>
-                                        </c-lwc-custom-radio-component>
-                                        <template if:true={showExpandGender}>
-                                                <button title={label.DD_Expand}
-                                                        class="slds-button slds-button_neutral expand-button"
-                                                        onclick={expand}
-                                                        style="width:100%;border-radius:0px;"
-                                                        name="expandGender">
-                                                        Test
-                                                </button>
-                                        </template>
-                                </div>
+
                         </div>
                 </div>
         </lightning-card>
