@@ -1,0 +1,20 @@
+<template>
+  <div class="slds-card">
+    <!-- <div class="slds-p-around_small"> -->
+    <fieldset class="material slds-form-element">
+      <legend class="slds-form-element__legend slds-form-element__label">{label}</legend>
+      <div class="slds-form-element__control">
+        <template for:each={options} for:item="option">
+          <span key={option.value} class="slds-radio">
+                                <input type="radio" id={option.value} value={option.value} name={name} checked={option.checked} onchange={handleChange}/>
+                                <label class="slds-radio__label" for={option.value}>
+                                <span class="slds-radio_faux"></span>
+          <span class="slds-form-element__label">{option.label}</span>
+          </label>
+          </span>
+        </template>
+      </div>
+    </fieldset>
+    <!-- </div> -->
+  </div>
+</template>

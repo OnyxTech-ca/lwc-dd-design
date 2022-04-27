@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/lucidlive.lwc-l2hs8jkp",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 6fC5w5s6bF5sGJ88J74i --open"
+  }
+}

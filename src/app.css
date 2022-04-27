@@ -1,0 +1,11 @@
+
+.slds-form-element__label {
+     
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #706e6b;
+}
+.material-input{
+    border-radius: 0px;
+}
