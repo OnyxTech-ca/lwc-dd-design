@@ -1,11 +1,19 @@
-
+.slds-form-element__legend,
 .slds-form-element__label {
-     
+    color:#000;
+    text-transform:normal;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #706e6b;
+    letter-spacing: normal;
 }
 .material-input{
     border-radius: 0px;
+}
+
+.slds-checkbox, 
+.slds-radio {
+    border-width:0 !important;
+}
+
+.expand-button {
+    border-width:0;
 }

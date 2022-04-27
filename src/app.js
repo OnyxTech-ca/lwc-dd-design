@@ -15,26 +15,45 @@ export default class App extends LightningElement {
 
     priceRangePicklist = [
         {
-            label: "Something",
+            label: "Studio",
             value: "Test"
         },
         {
-            label: "Something",
+            label: "1 Bedroom + Den",
             value: "Test"
         },
         {
-            label: "Something",
+            label: "2 Bedrooms",
             value: "Test"
         },
         {
-            label: "Something",
+            label: "2 Bedrooms + Den",
             value: "Test"
         },
         {
-            label: "Something",
+            label: "3 Bedrooms",
             value: "Test"
-        }
-
+        },
+        {
+            label: "3 Bedrooms + Den",
+            value: "Test"
+        },
+        {
+            label: "4 Bedrooms",
+            value: "Test"
+        },
+        {
+            label: "Condo",
+            value: "Test"
+        },
+        {
+            label: "Townhome",
+            value: "Test"
+        },
+        {
+            label: "Penthouse",
+            value: "Test"
+        },
     ];
 
 
