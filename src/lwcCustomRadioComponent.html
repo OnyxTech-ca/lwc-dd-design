@@ -1,20 +1,28 @@
 <template>
+
   <div class="slds-card">
-    <!-- <div class="slds-p-around_small"> -->
     <fieldset class="material slds-form-element">
       <legend class="slds-form-element__legend slds-form-element__label">{label}</legend>
-      <div class="slds-form-element__control">
+      <div class="slds-form-element__control custom-radio">
         <template for:each={options} for:item="option">
           <span key={option.value} class="slds-radio">
-                                <input type="radio" id={option.value} value={option.value} name={name} checked={option.checked} onchange={handleChange}/>
-                                <label class="slds-radio__label" for={option.value}>
-                                <span class="slds-radio_faux"></span>
-          <span class="slds-form-element__label">{option.label}</span>
-          </label>
+            <input type="radio" id={option.value} value={option.value} name={name} checked={option.checked} onchange={handleChange}/>
+            <span class="slds-radio_faux"></span>
+          <label class="slds-radio__label" for={option.value}>
+              <span class="slds-form-element__label">{option.label}</span>
+            </label>
+          <div class="expand">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1000 1000"
+              style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+              <path fill="#fff" d="M493.9,999.1L59.7,565c-24.6-24.6-24.6-64.4,0-88.9s64.4-24.6,88.9,0l346.5,346.5L852,475.4c24.9-24.2,64.7-23.7,88.9,1.2
+	c24.2,24.9,23.7,64.7-1.2,88.9L493.9,999.1z"></path>
+              <path fill="#fff" d="M493.9,542.4L59.7,108.2c-24.6-24.6-24.6-64.4,0-88.9s64.4-24.6,88.9,0l346.5,346.5L852,18.7c24.9-24.2,64.7-23.7,88.9,1.2
+	c24.2,24.9,23.7,64.7-1.2,88.9L493.9,542.4z"></path>
+            </svg>
+          </div>
           </span>
         </template>
       </div>
     </fieldset>
-    <!-- </div> -->
   </div>
 </template>
